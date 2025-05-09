@@ -8,15 +8,15 @@
     
     <hr>
 
-    <a href="{% url 'dashboard' %}" class="btn btn-outline-primary btn-sm">
+    <a href="{% url 'create-record' %}" class="btn btn-outline-primary btn-sm">
         create a new record
     </a>
 
     <hr>
 
-    <table class="table table-light table-hover">
+    <table class="table table-hover table-bordered">
 
-        <thead class="table-light">
+        <thead class="table-dark">
 
             <tr>
 
@@ -44,6 +44,14 @@
             <tr>
                 <td> {{record.id}}</td>
                 <td> {{record.first_name}} {{record.last_name}}</td>
+
+                <td>{{record.email}}</td>
+                <td>{{record.phone}}</td>
+                <td>{{record.address}}</td>
+                <td>{{record.city}}</td>
+                <td>{{record.province}}</td>
+                <td>{{record.country}}</td>
+                <td>{{record.creation_date}}</td>
             </tr>
                 {% endfor %}
 
