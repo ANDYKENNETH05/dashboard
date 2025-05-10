@@ -1,2 +1,2 @@
-# A dashboard 
+# DJANGO dashboard 
 using full CRUD operations
